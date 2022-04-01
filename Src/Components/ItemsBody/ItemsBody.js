@@ -3,6 +3,7 @@ import React from 'react'
 
 const ItemsBody = ({items}) => {
 
+    // item view
     const renderItem = ({ item }) => (
         <View style={styles.itemTube}>
             <Text>{item}</Text>
@@ -11,6 +12,7 @@ const ItemsBody = ({items}) => {
 
   return (
     <View style={styles.container}>
+      {/* Items ScrollView */}
       <FlatList 
         data={items}
         renderItem={renderItem}

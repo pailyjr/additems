@@ -6,10 +6,11 @@ const Header = ({additem,setSearchVal}) => {
 
   return (
     <View style={styles.headerView}>
-      <View style={styles.searchView}>
+      {/* searching part */}
+      <View style={styles.searchView}>         
           <TextInput onChangeText={(val)=>setSearchVal(val.toLowerCase())} style={styles.inputBar}/>
       </View>
-      <View style={styles.divider}/>
+      {/* Addnew trigger */}
       <View style={styles.addView}>
         <TouchableOpacity onPress={additem} style={styles.addView}>
             <Ionicons style={{elevation:5}} name="add" size={40} color="grey" />
